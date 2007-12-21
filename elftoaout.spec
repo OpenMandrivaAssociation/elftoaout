@@ -10,6 +10,7 @@ License:	GPL
 Group:		System/Kernel and hardware
 Source0:	ftp://sunsite.mff.cuni.cz/OS/Linux/Sparc/local/elftoaout/%{name}-%{version}.tar.bz2
 Patch0:		elftoaout-2.3-include.patch.bz2
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The elftoaout utility converts a static ELF binary to a static a.out
