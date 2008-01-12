@@ -1,6 +1,6 @@
 %define	name	elftoaout
 %define	version	2.3
-%define	release	%mkrel 7
+%define	release	%mkrel 8
 
 Summary:	A utility for converting ELF binaries to a.out binaries
 Name:		%{name}
