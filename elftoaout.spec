@@ -9,7 +9,7 @@ Release:	%{release}
 License:	GPL
 Group:		System/Kernel and hardware
 Source0:	ftp://sunsite.mff.cuni.cz/OS/Linux/Sparc/local/elftoaout/%{name}-%{version}.tar.bz2
-Patch0:		elftoaout-2.3-include.patch.bz2
+Patch0:		elftoaout-2.3-include.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
@@ -23,10 +23,10 @@ elftoaout package.
 
 %prep
 %setup -q
-%patch -p1 -b .include
+%patch0 -p1 -b .include
 
 %build
-%make CFLAGS="$RPM_OPT_FLAGS"
+%make CFLAGS="%{optflags}"
 
 %install
 %{__rm} -rf $RPM_BUILD_ROOT
