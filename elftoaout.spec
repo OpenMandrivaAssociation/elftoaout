@@ -29,13 +29,13 @@ elftoaout package.
 %make CFLAGS="%{optflags}"
 
 %install
-%{__rm} -rf $RPM_BUILD_ROOT
+%{__rm} -rf %{buildroot}
 
-%{__install} -m0755 %{name} -D $RPM_BUILD_ROOT%{_bindir}/%{name}
-%{__install} -m0644 %{name}.1 -D $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
+%{__install} -m0755 %{name} -D %{buildroot}%{_bindir}/%{name}
+%{__install} -m0644 %{name}.1 -D %{buildroot}%{_mandir}/man1/%{name}.1
 
 %clean
-%{__rm} -rf $RPM_BUILD_ROOT
+%{__rm} -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
