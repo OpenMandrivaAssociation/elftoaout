@@ -1,11 +1,11 @@
 %define	name	elftoaout
 %define	version	2.3
-%define release	23
+%define release	24
 
 Summary:	A utility for converting ELF binaries to a.out binaries
 Name:		elftoaout
 Version:	2.3
-Release:	23
+Release:	24
 License:	GPLv2
 Group:		System/Kernel and hardware
 Source0:	ftp://sunsite.mff.cuni.cz/OS/Linux/Sparc/local/elftoaout/%{name}-%{version}.tar.bz2
